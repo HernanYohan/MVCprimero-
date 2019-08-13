@@ -43,7 +43,13 @@ public class Vista1 extends javax.swing.JFrame {
 
         jLabel3.setText("Resultado");
 
+        BSumar.setBackground(new java.awt.Color(255, 255, 255));
         BSumar.setText("Sumar");
+        BSumar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BSumarActionPerformed(evt);
+            }
+        });
 
         TN1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,7 +69,7 @@ public class Vista1 extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addGap(18, 18, 18)
-                                .addComponent(TN2))
+                                .addComponent(TN2, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel3)
                                 .addGap(18, 18, 18)
@@ -71,11 +77,11 @@ public class Vista1 extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel1)
                                 .addGap(18, 18, 18)
-                                .addComponent(TN1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(TN1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(78, 78, 78)
                         .addComponent(BSumar)))
-                .addContainerGap(234, Short.MAX_VALUE))
+                .addContainerGap(181, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -103,6 +109,10 @@ public class Vista1 extends javax.swing.JFrame {
     private void TN1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TN1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TN1ActionPerformed
+
+    private void BSumarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BSumarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BSumarActionPerformed
 
     /**
      * @param args the command line arguments
