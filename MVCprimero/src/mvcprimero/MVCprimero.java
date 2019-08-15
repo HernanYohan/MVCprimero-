@@ -10,13 +10,15 @@ import modelo.Modelo;
 import vista.Vista1;
 
 /**
- *
+ *@Camilo Alvarez
  * @author Hernan
  */
 public class MVCprimero {
 
     /**
      * @param args the command line arguments
+     * se inici al prorama 
+     * se llama el modelo  la vista  y el controlador 
      */
     public static void main(String[] args) {
         
