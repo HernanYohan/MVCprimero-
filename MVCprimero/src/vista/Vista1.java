@@ -30,7 +30,6 @@ public class Vista1 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        BSumar = new javax.swing.JButton();
         TN1 = new javax.swing.JTextField();
         TN2 = new javax.swing.JTextField();
         Tresultado = new javax.swing.JTextField();
@@ -43,6 +42,7 @@ public class Vista1 extends javax.swing.JFrame {
         Tm2 = new javax.swing.JTextField();
         Tr2 = new javax.swing.JTextField();
         Bmultiplicar = new javax.swing.JButton();
+        BSumar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -51,14 +51,6 @@ public class Vista1 extends javax.swing.JFrame {
         jLabel2.setText("Numero 2");
 
         jLabel3.setText("Resultado");
-
-        BSumar.setBackground(new java.awt.Color(255, 255, 255));
-        BSumar.setText("Sumar");
-        BSumar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BSumarActionPerformed(evt);
-            }
-        });
 
         TN1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,6 +75,8 @@ public class Vista1 extends javax.swing.JFrame {
         });
 
         Bmultiplicar.setText("Multiplicar");
+
+        BSumar.setText("Sumar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -114,9 +108,6 @@ public class Vista1 extends javax.swing.JFrame {
                                     .addComponent(Tm2)
                                     .addComponent(Tr2)))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(87, 87, 87)
-                        .addComponent(BSumar))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(82, 82, 82)
                         .addComponent(Bmultiplicar)))
                 .addGap(95, 95, 95))
@@ -127,7 +118,10 @@ public class Vista1 extends javax.swing.JFrame {
                         .addComponent(jLabel7))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(100, 100, 100)
-                        .addComponent(jLabel4)))
+                        .addComponent(jLabel4))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(87, 87, 87)
+                        .addComponent(BSumar)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -143,9 +137,9 @@ public class Vista1 extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(TN2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(BSumar)
                 .addGap(18, 18, 18)
+                .addComponent(BSumar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(Tresultado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -174,10 +168,6 @@ public class Vista1 extends javax.swing.JFrame {
     private void TN1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TN1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TN1ActionPerformed
-
-    private void BSumarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BSumarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BSumarActionPerformed
 
     private void Tm1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Tm1ActionPerformed
         // TODO add your handling code here:

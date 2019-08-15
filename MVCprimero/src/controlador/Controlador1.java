@@ -35,6 +35,7 @@ public class Controlador1 implements ActionListener, KeyListener, MouseListener 
         this.view = view;
         this.model = model;
         this.view.BSumar.addActionListener(this);
+        this.view.Bmultiplicar.addActionListener(this);
         this.view.TN2.addKeyListener(this);
         this.view.TN1.addKeyListener(this);
         this.view.Tm1.addKeyListener(this);
@@ -59,21 +60,24 @@ public class Controlador1 implements ActionListener, KeyListener, MouseListener 
      */
     @Override
     public void actionPerformed (ActionEvent e){
-        
+   Object fuente = e.getSource();
+   if (fuente==view.BSumar)
+   {
     model.setNumero1(Integer.parseInt(view.TN1.getText()));
     model.setNumero2(Integer.parseInt(view.TN2.getText()));
     model.sumar();
     view.Tresultado.setText(String.valueOf(model.getResultado()));
+   }
     
-    
-        
+   if (fuente==view.Bmultiplicar)
+   {
     model.setNumeroM1(Integer.parseInt(view.Tm1.getText()));
     model.setNumeroM2(Integer.parseInt(view.Tm2.getText()));
     model.multiplicar();
     view.Tr2.setText(String.valueOf(model.getResultadoM()));
+   }      
     
     }
-
     /**
      * Evento que no deja escribir caracteres en un campo de texto
      * @param e 
@@ -98,6 +102,8 @@ public class Controlador1 implements ActionListener, KeyListener, MouseListener 
     model.setNumero2(Integer.parseInt(view.TN2.getText()));
     model.sumar();
     view.Tresultado.setText(String.valueOf(model.getResultado())); 
+    
+
      }
   
     }
